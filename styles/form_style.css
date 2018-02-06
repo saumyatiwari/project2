@@ -1,0 +1,82 @@
+ol, ul {
+  list-style: none;
+}
+
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+
+.register {
+  margin: 0 auto;
+  margin-top:30px;
+  margin-bottom:20px;
+  padding: 30px;
+  width: 500px;
+  background:#f4f5f7;
+  border-radius: 3px;
+  color:black;
+  
+}
+
+.register > sup{
+font-size: 15px; 
+color: red; 
+}
+
+
+
+input,textarea {
+ 
+  background-color: white;
+  
+}
+
+.register-input {
+  display: block;
+  width: 60%;
+  height: 30px;
+  font-weight: 500;
+  font-size: 14px;
+  background: white;
+  border: 1px solid rgb(229, 229, 229);
+  margin-top: 5px;
+  margin-left:100px;
+  margin-right:50px;
+}
+
+.register-textarea {
+  display: block;
+  width: 80%;
+  height: 85px;
+  font-weight: 500;
+  font-size: 14px;
+  background: white;
+  border: 1px solid rgb(229, 229, 229);
+  margin-top: 5px;
+  margin-left:50px;
+  margin-right:50px;
+}
+
+
+.register-button {
+  display: block;
+  width: 30%;
+  height: 35px;
+  margin-top: 30px;
+  margin-left: 135px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  background: #fcfcfc;
+  border: 1px solid rgb(229, 229, 229);
+  color:white;
+  border-color: #d8d8d8 #d1d1d1 #c3c3c3;
+  border-radius: 2px;
+  background:#528cea;
+  cursor: pointer;
+ 
+}

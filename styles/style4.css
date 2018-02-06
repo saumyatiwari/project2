@@ -1,0 +1,405 @@
+body{
+	background:#ffffff;
+	color:#585858;
+	font-family:Arial;
+	font-size:14px;
+	margin:0;
+	min-width:960px;
+}
+a{
+	outline:none;
+}
+img{
+	border:none;
+}
+#header div#section:after, #header ul:after, #content div:after, #content div ul.services:after, #footer div:after, #footer div div.section ul:after{
+	clear:both;
+	content:" ";
+	display:block;
+	font-size:0;
+	height:0;
+	visibility:hidden;
+}
+#page{
+	height:100%;
+	width:100%;
+}
+
+/*_______________________________Starting of header____________________________________*/
+#header{
+	background:url(../images/bg-header.gif) repeat-x;
+	height:auto;
+	overflow:hidden;
+	position:relative;
+	
+}
+#header div#section{
+	height:auto;
+	margin:0 auto;
+	width:1200px;
+	float:left;
+	margin-left:140px;
+	margin-top:25px;
+	margin-bottom:20px;
+	
+}
+#header div#section div{
+	float:left;
+	
+}
+#header div#section div a{
+	display:block;
+}
+#header div#section span{
+	color:white;
+	float:right;
+	font-size:20px;
+	margin-right:100px;
+	margin-top:7px;
+	width:auto;
+	
+}
+
+#header div#tagline{
+	background:url(../images/bg-header2.jpg) no-repeat center -20px;
+	margin-top:10px;
+}
+#header div#tagline div{
+	color:#295071;
+	height:435px;
+	padding-left:20px;
+	margin:0 auto;
+	width:940px;
+}
+#header div#tagline div h4{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:50px;
+	font-weight:bold;
+	line-height:70px;
+	margin:0;
+	padding-top:100px;
+	text-shadow:0 1px 0 #FFFFFF;
+	width:450px;
+}
+#header div#tagline div p{
+	font-size:24px;
+	line-height:35px;
+	margin:0;
+	padding-top:20px;
+	text-shadow:0 1px 1px #FFFFFF;
+	width:340px;
+}
+
+#menu{
+	width: 100%;
+	margin: 0;
+	padding: 10px 0 0 0;
+	list-style: none;  
+	background: #111;
+	
+}
+
+#menu li{
+	float: left;
+	padding: 0 0 10px 0;
+	position: relative;
+}
+
+#menu a{
+	float: left;
+	height: 25px;
+	padding: 0 25px;
+	color: #999;
+	text-transform: uppercase;
+	font: bold 12px/25px Arial, Helvetica;
+	text-decoration: none;
+	text-shadow: 0 1px 0 #000;
+}
+
+#menu li:hover > a{
+	color: #fafafa;
+}
+
+*html #menu li a:hover{ /* IE6 */
+	color: #fafafa;
+}
+
+#menu li:hover > ul{
+	display: block;
+}
+
+/* Sub-menu */
+
+#menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;    
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    z-index: 99999;    
+    background: #444;
+    background: -moz-linear-gradient(#444, #111);
+    background: -webkit-gradient(linear,left bottom,left top,color-stop(0, #111),color-stop(1, #444));
+    background: -webkit-linear-gradient(#444, #111);    
+    background: -o-linear-gradient(#444, #111);	
+    background: -ms-linear-gradient(#444, #111);	
+    background: linear-gradient(#444, #111);	
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#menu ul li{
+    float: none;
+    margin: 0;
+    padding: 0;
+    display: block;  
+    -moz-box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+    -webkit-box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+    box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+}
+
+#menu ul li:last-child{   
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;    
+}
+
+#menu ul a{    
+    padding: 10px;
+    height: auto;
+    line-height: 1;
+    display: block;
+    white-space: nowrap;
+    float: none;
+    text-transform: none;
+}
+
+*html #menu ul a{ /* IE6 */   
+	height: 10px;
+	width: 150px;
+}
+
+*:first-child+html #menu ul a{ /* IE7 */    
+	height: 10px;
+	width: 150px;
+}
+
+#menu ul a:hover{
+        background: #0186ba;
+	background: -moz-linear-gradient(#04acec,  #0186ba);	
+	background: -webkit-gradient(linear, left top, left bottom, from(#04acec), to(#0186ba));
+	background: -webkit-linear-gradient(#04acec,  #0186ba);
+	background: -o-linear-gradient(#04acec,  #0186ba);
+	background: -ms-linear-gradient(#04acec,  #0186ba);
+	background: linear-gradient(#04acec,  #0186ba);
+}
+
+#menu ul li:first-child a{
+    -moz-border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+}
+
+#menu ul li:first-child a:after{
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: -8px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 8px solid #444;
+}
+
+#menu ul li:first-child a:hover:after{
+    border-bottom-color: #04acec; 
+}
+
+#menu ul li:last-child a{
+    -moz-border-radius: 0 0 5px 5px;
+    -webkit-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+}
+
+/* Clear floated elements */
+#menu:after{
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+* html #menu             { zoom: 1; } /* IE6 */
+*:first-child+html #menu { zoom: 1; } /* IE7 */
+
+
+
+/*____________________________________End of Header_________________________________*/
+
+/*_____________________________________Starting of content Area________________________*/
+#content {
+	
+	
+	margin:-0 auto 0;
+	min-height:174px;
+	overflow:hidden;
+	padding:0;
+	position:relative;
+	width:100%;
+	height:500px;
+	
+}
+
+#contact
+{
+	height:300;
+	width:600px;
+	background:white;
+	
+}
+
+#login {
+	margin: 50px auto;
+	width: 300px;
+}
+#signup {
+	margin:50px auto;
+	width: 300px;
+}
+input::-webkit-input-placeholder {
+   color:#5a5656;
+}
+form fieldset input[type="text"], input[type="password"] {
+	background-color: #e5e5e5;
+	border: none;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	color: #5a5656;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	height: 30px;
+	outline: none;
+	padding: 0px 10px;
+	width: 280px;
+	-webkit-appearance:none;
+}
+
+form fieldset input[type="submit"] {
+	background-color: #008dde;
+	border: none;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	color: #f4f4f4;
+	cursor: pointer;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	height: 30px;
+	text-transform: uppercase;
+	width: 300px;
+	-webkit-appearance:none;
+
+
+}
+form fieldset a {
+	color: #5a5656;
+	font-size: 10px;
+}
+form fieldset a:hover { text-decoration: underline; }
+.btn-round {
+	background-color: #5a5656;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	color: #f4f4f4;
+	display: block;
+	font-size: 12px;
+	height: 30px;
+	line-height: 50px;
+	margin: 30px 125px;
+	text-align: center;
+	text-transform: uppercase;
+	width: 50px;
+}
+
+
+/*__________________________________End of content Area__________________________*/
+
+/*__________________________________startinfooter Area___________________________________*/
+
+#footer{
+	background:url(../images/bg-header.gif) repeat-x;
+	min-height:113px;
+	width:100%;
+}
+#footer div{
+	font-size:12px;
+	margin:0 auto;
+	padding-top:20px;
+	position:relative;
+	width:960px;
+}
+#footer div div#connect{
+	float:left;
+	padding:0;
+	width:250px;
+}
+#footer div div#connect a{
+	display:inline-block;
+	padding-right:10px;
+}
+#footer div div.section{
+	float:right;
+	padding:0;
+	width:700px;
+}
+#footer div div.section ul{
+	list-style:none;
+	margin:0;
+	padding:0;
+	position:absolute;
+	right:0;
+	top:0;
+}
+#footer div div.section ul li{
+	border-left:1px solid #6886a0;
+	float:left;
+	padding:0 5px;
+}
+#footer div div.section ul li.last{
+	border-right:0;
+}
+#footer div div.section ul li:first-child{
+	border:none;
+}
+#footer a{
+	color:#6886A0;
+	text-decoration:none;
+}
+#footer div div.section ul li a{
+	display:block;
+	height:12px;
+	line-height:10px;
+}
+#footer a:hover{
+	color:#fff;
+}
+#footer div div.section p{
+	color:#6886A0;
+	margin:0;
+	padding:20px 3px 0;
+	text-align:right;
+}
+
+/*_____________________________End of footer______________________________________*/
+
+
+
+
+
+
